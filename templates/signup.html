@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <title>Hotel | B N B</title>
+</head>
+<body>
+    <section class="login">
+        <div class="login_box">
+            <div class="left">
+                <div class="top_link"><a href="/index"><img
+                            src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+                            alt="">Return home</a></div>
+                <div class="contact">
+                    <form action="/" id="loginForm">
+                        <h3>SIGN UP</h3>
+                        <input type="text" placeholder="USERNAME" id="username" required>
+                        <input type="email" placeholder="EMAIL" id="username" required>
+                        <input type="password" placeholder="PASSWORD" id="password" required>
+                        <button class="submit" type="button" onclick="handleLogin()">SIGN UP</button>
+                        <br>
+                        <p>Already have an account? <a href="/login">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-text">
+                    <h2>Hotel B N B</h2>
+                    <h5>Your Comfort is Our Priority</h5>
+                </div>
+            </div>
+    </section>
+    <script>
+        function handleLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Please fill in all fields.");
+            } else {
+                alert("SignUp Successful !");
+                // You can add your actual login logic here
+            }
+        }
+    </script>
+</body>
+
+</html>
