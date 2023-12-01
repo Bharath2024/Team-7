@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'HotelBNB'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1FE61B477FA047E68C8079E4804B889B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83FDE4F82F334C3C839A2CA82CF760A7 }}
